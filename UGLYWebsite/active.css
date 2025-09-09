@@ -1,0 +1,126 @@
+@keyframes animation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+#sun {
+    width: 500px;
+    height: 500px;
+
+    animation: animation 100s linear infinite;
+}
+
+#mercury {
+    width: 24px;
+    height: 24px;
+    
+    transform: translateX(525px);
+    animation: animation .24s linear infinite;
+}
+
+#venus {
+    width: 60px;
+    height: 60px;
+
+    transform: translateX(550px);
+    animation: animation .62s linear infinite;
+}
+
+#earth {
+    width: 63px;
+    height: 63px;
+
+    transform: translateX(580px);
+    animation: animation 1.0s linear infinite;
+}
+
+#mars {
+    width: 34px;
+    height: 34px;
+
+    transform: translateX(690px);
+    animation: animation 1.88s linear infinite;
+}
+
+#jupiter {
+    width: 71.5px;
+    height: 71.5px;
+
+    transform: translateX(820px);
+    animation: animation 12.0s linear infinite;
+}
+
+#saturn {
+    width: 60.3px;
+    height: 60.3px;
+
+    transform: translateX(1150px);
+    animation: animation 29.0s linear infinite;
+}
+
+#uranus {
+    width: 25.4px;
+    height: 25.4px;
+
+    transform: translateX(1500px);
+    animation: animation 84.0s linear infinite;
+}
+
+#neptune {
+    width: 24.8px;
+    height: 24.8px;
+
+    transform: translateX(2000px);
+    animation: animation 165.0s linear infinite;
+}
+
+img.planet {
+    position: absolute;
+}
+
+img.planet:hover {
+    cursor: pointer;
+}
+
+div.main-div {
+    
+    width: 100vh;
+    height: 100vh;
+
+    top: 0;
+    bottom: 0;
+
+    border: 2px solid rgb(144, 54, 54);
+
+}
+
+body {
+    background-color: rgb(0,0,0);
+    background-image: url('https://img.freepik.com/premium-vector/space-background-with-stars-vector-illustration_97886-319.jpg');
+}
+
+.text1 {
+    font-family: fantasy;
+    color: rgb(144, 54, 54);
+    font-size: 1.5em;
+}
+
+.text2 {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+.margin-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
