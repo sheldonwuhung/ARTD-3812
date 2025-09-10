@@ -1,117 +1,112 @@
+:root {
+    --sizemodifier: .2;
+    --timemodifier: 10
+}
+
 @keyframes animation {
-  0% {
-    rotate: 0deg;
-  }
-  100% {
-    rotate: 360deg;
-  }
+  0% {rotate: 0deg;}
+  100% {rotate: 360deg;}
 }
 
 #sun {
-    width: 500px;
-    height: 500px;
+    width: calc(2500px * var(--sizemodifier));
+    height: calc(2500px * var(--sizemodifier));
 
-    animation: animation 100s linear infinite;
+    animation: animation calc(100s * var(--timemodifier)) linear infinite;
 }
 
 #mercury {
-    width: 24px;
-    height: 24px;
+    width: calc(24px * var(--sizemodifier));
+    height: calc(24px * var(--sizemodifier));
     
-    transform: translateX(525px);
-    animation: animation .24s linear infinite;
+    transform: translateX(275px);
+    animation: animation  calc(.24s * var(--timemodifier)) linear infinite;
 }
 
 #venus {
-    width: 60px;
-    height: 60px;
+    width: calc(60px * var(--sizemodifier));
+    height: calc(60px * var(--sizemodifier));
 
-    transform: translateX(550px);
-    animation: animation .62s linear infinite;
+    transform: translateX(325px);
+    animation: animation  calc(.62s * var(--timemodifier)) linear infinite;
 }
 
 #earth {
-    width: 63px;
-    height: 63px;
+    width: calc(63px * var(--sizemodifier));
+    height: calc(63px * var(--sizemodifier));
 
-    transform: translateX(580px);
-    animation: animation 1.0s linear infinite;
+    transform: translateX(400px);
+    animation: animation calc(1s * var(--timemodifier)) linear infinite;
 }
 
 #mars {
-    width: 34px;
-    height: 34px;
+    width: calc(34px * var(--sizemodifier));
+    height: calc(34px * var(--sizemodifier));
 
-    transform: translateX(690px);
-    animation: animation 1.88s linear infinite;
+    transform: translateX(550px);
+    animation: animation calc(1.88s * var(--timemodifier)) linear infinite;
 }
 
 #jupiter {
-    width: 71.5px;
-    height: 71.5px;
+    width: calc(71.5px * var(--sizemodifier));
+    height: calc(71.5px * var(--sizemodifier));
 
-    transform: translateX(820px);
-    animation: animation 12.0s linear infinite;
+    transform: translateX(800px);
+    animation: animation calc(12s * var(--timemodifier)) linear infinite;
 }
 
 #saturn {
-    width: 60.3px;
-    height: 60.3px;
+    width: calc(60.3px * var(--sizemodifier));
+    height: calc(60.3px * var(--sizemodifier));
 
     transform: translateX(1150px);
-    animation: animation 29.0s linear infinite;
+    animation: animation calc(29s * var(--timemodifier)) linear infinite;
 }
 
 #uranus {
-    width: 25.4px;
-    height: 25.4px;
+    width: calc(25.4px * var(--sizemodifier));
+    height: calc(25.4px * var(--sizemodifier));
 
-    transform: translateX(1500px);
-    animation: animation 84.0s linear infinite;
+    transform: translateX(1650px);
+    animation: animation calc(84s * var(--timemodifier)) linear infinite;
 }
 
 #neptune {
-    width: 24.8px;
-    height: 24.8px;
+    width: calc(24.8px * var(--sizemodifier));
+    height: calc(24.8px * var(--sizemodifier));
 
-    transform: translateX(2000px);
-    animation: animation 165.0s linear infinite;
+    transform: translateX(2450px);
+    animation: animation calc(165s * var(--timemodifier)) linear infinite;
 }
 
-img.planet {
-    position: absolute;
-}
-
-img.planet:hover {
-    cursor: pointer;
-}
+img.planet {position: absolute;}
 
 div.main-div {
     
-    width: 100vh;
-    height: 100vh;
+    
 
+    
     top: 0;
     bottom: 0;
 
-    border: 2px solid rgb(144, 54, 54);
+    /* border: 2px solid rgb(144, 54, 54); */
 
 }
 
 body {
+    transform: scale(0.3);
+
     background-color: rgb(0,0,0);
-    background-image: url('https://img.freepik.com/premium-vector/space-background-with-stars-vector-illustration_97886-319.jpg');
+    /* background-image: url('https://img.freepik.com/premium-vector/space-background-with-stars-vector-illustration_97886-319.jpg'); */
 }
 
 .text1 {
+    position: absolute;
+    transform: translate(0px, -600px);
+
     font-family: fantasy;
     color: rgb(144, 54, 54);
-    font-size: 1.5em;
-}
-
-.text2 {
-    font-family: monospace;
-    font-size: 1em;
+    font-size: 4em;
 }
 
 .margin-center {
